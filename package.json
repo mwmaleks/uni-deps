@@ -1,6 +1,6 @@
 {
   "name": "gulp-deps",
-  "description": "creating a dependency file regarding content",
+  "description": "Creates a dependency file regarding projects fils content",
   "version": "0.0.1",
   "main": "./index.js",
   "scripts": {
