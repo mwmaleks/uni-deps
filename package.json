@@ -1,28 +1,31 @@
 {
   "name": "gulp-deps",
-  "description": "Creates a dependency file regarding projects fils content",
   "version": "0.0.1",
+  "description": "creating a dependency file regarding content",
   "main": "./index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "gulp mocha",
+    "docs": "gulp generate-docs"
   },
   "engines": {
     "node": ">= 0.10"
   },
   "keywords": [
     "gulp",
-    "dependency",
+    "dependenct",
     "build",
     "js"
   ],
   "author": "Alexey Nosov <mwmaleks@gmx.com> (http://github.com/mwmaleks)",
   "maintainers": [
-      "Alexey Nosov <mwmaleks@gmx.com> (http://github.com/mwmaleks)",
-      "Akhmethanov Pavel <pavel-power@ya.ru> (http://github.com/pavelpower)"
+    "Alexey Nosov <mwmaleks@gmx.com> (http://github.com/mwmaleks)",
+    "Akhmethanov Pavel <pavel-power@ya.ru> (http://github.com/pavelpower)"
   ],
   "license": "MIT",
   "dependencies": {
+    "event-stream": "~3.1.0",
     "clone": "~0.1.11",
+    "bufferstreams": "0.0.1",
     "gulp-util": "~2.2.13",
     "gulp-mocha": "~0.4.1",
     "async": "~0.7.0"
@@ -30,7 +33,8 @@
   "devDependencies": {
     "mocha": "~1.17.1",
     "chai": "~1.9.0",
-    "gulp": "~3.5.0"
+    "gulp": "~3.5.0",
+    "gulp-jsdoc": "^0.1.2"
   },
   "licenses": [
     {
