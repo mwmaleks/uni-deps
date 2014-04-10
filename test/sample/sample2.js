@@ -1,0 +1,4 @@
+
+function Sample2() {
+
+}

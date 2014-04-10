@@ -1,0 +1,8 @@
+{ "files": [ 
+"/home/mwmaleks/Projects/uni-deps/test/sample/ext/app/domain/Global.js",
+"/home/mwmaleks/Projects/uni-deps/test/sample/ext/app/EventDomain.js",
+"/home/mwmaleks/Projects/uni-deps/test/sample/ext/app/domain/Component.js",
+"/home/mwmaleks/Projects/uni-deps/test/sample/ext/app/domain/Store.js",
+"/home/mwmaleks/Projects/uni-deps/test/sample/ext/app/Controller.js",
+"/home/mwmaleks/Projects/uni-deps/test/sample/extjs-app.js"
+] }
