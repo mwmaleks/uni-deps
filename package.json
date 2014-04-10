@@ -1,7 +1,7 @@
 {
   "name": "gulp-deps",
   "version": "0.0.1",
-  "description": "creating a dependency file regarding content",
+  "description": "Creates a dependency file regarding projects files content",
   "main": "./index.js",
   "scripts": {
     "test": "gulp mocha",
@@ -12,7 +12,7 @@
   },
   "keywords": [
     "gulp",
-    "dependenct",
+    "dependency",
     "build",
     "js"
   ],
