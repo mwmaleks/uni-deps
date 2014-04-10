@@ -1,7 +1,7 @@
 {
   "name": "gulp-deps",
-  "version": "0.0.1",
   "description": "creating a dependency file regarding content",
+  "version": "0.0.1",
   "main": "./index.js",
   "scripts": {
     "test": "mocha"
@@ -11,7 +11,7 @@
   },
   "keywords": [
     "gulp",
-    "dependenct",
+    "dependency",
     "build",
     "js"
   ],
@@ -22,9 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "event-stream": "~3.1.0",
     "clone": "~0.1.11",
-    "bufferstreams": "0.0.1",
     "gulp-util": "~2.2.13",
     "gulp-mocha": "~0.4.1",
     "async": "~0.7.0"
