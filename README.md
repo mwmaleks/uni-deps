@@ -17,47 +17,61 @@ By default `extJs4ParseRule` function used to parse file content, and `extDepsEn
 
 ### Example dependecies struture
 
-
-        'module1' depends on ['module7', 'module4', 'module5','module8', 'module6', 'module3']
-        'module2' depends on ['module4', 'module5', 'module9','module3']
-        'module3' depends on ['module7', 'module5', 'module6']
-        'module4' depends on ['module5', 'module3', 'module6']
-
-
-```
-        folders structure
-            
-            test/
-                folder1/
-                    module1
-                    module2
-                    module3
-                    module4
-            
-                    folder/
-                        module5
-                        module6
-                        module7
-                        module8
-                        module9
-```
-the result file will be:
-
+folders structure:
 ```
 
+test/
+        ext/
+                domain/
+                        Component.js
+                        Controller.js
+                        Global.js
+                        Store.js
+                Application.js
+                Controller.js
+        extjs-app.js
+        
+```
+
+extjs-app.js:
+```js
+...
+var Ext = {
+    define: function() {}
+};
+
+Ext.define('Ext.app.Application', {
+    ...
+    extend: 'Ext.app.Controller'
+    ...
+});
+```
+Controller.js:
+```js
+...
+Ext.define('Ext.app.Controller', {
+    requires: [
+        'Ext.app.domain.Global',
+        'Ext.app.domain.Component',
+        'Ext.app.domain.Store'
+    ]
+    ...
+});
+...
+
+```
+And so on (see example in this repo)
+The result of the work will be the `common.deps.json` file:
+```json
 { "files": [ 
-"test/folder1/folder2/module7",
-"test/folder1/folder2/module5",
-"test/folder1/folder2/module8",
-"test/folder1/folder2/module6",
-"test/folder1/folder2/module9",
-"test/folder1/module3"
-"test/folder1/module4"
-"test/folder1/module2"
-"test/folder1/module1"
+    "test/sample/ext/app/domain/Global.js",
+    "test/sample/ext/app/EventDomain.js",
+    "test/sample/ext/app/domain/Component.js",
+    "test/sample/ext/app/domain/Store.js",
+    "test/sample/ext/app/Controller.js",
+    "test/sample/extjs-app.js"
 ] }
 ```
-
 
 ### Usage
 
@@ -75,3 +89,4 @@ searchDeps('test/sample/extjs-app.js', options, function() {
   console.log('done');
 });
 ```
+
