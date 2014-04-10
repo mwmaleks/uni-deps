@@ -15,7 +15,11 @@
     "build",
     "js"
   ],
-  "author": "pavelpower",
+  "author": "Alexey Nosov <mwmaleks@gmx.com> (http://github.com/mwmaleks)",
+  "maintainers": [
+      "Alexey Nosov <mwmaleks@gmx.com> (http://github.com/mwmaleks)",
+      "Akhmethanov Pavel <pavel-power@ya.ru> (http://github.com/pavelpower)"
+  ],
   "license": "MIT",
   "dependencies": {
     "event-stream": "~3.1.0",
