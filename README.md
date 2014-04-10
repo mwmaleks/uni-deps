@@ -90,3 +90,11 @@ searchDeps('test/sample/extjs-app.js', options, function() {
 });
 ```
 
+### Options description
+
+
+* `baseDir:` the base point directory
+* `parseRule:` function that provides the custom rule for the source file to parse
+* `manyFiles:` if `true` should save deps files for each component that has dependencies
+* `fileName:` custom result file name (defaults to "common.deps")
+* `ext:` "common.deps" file extension (defaults to ".json")
