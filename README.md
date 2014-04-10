@@ -1,6 +1,6 @@
 # uni-deps
 
-##### The library serve for searching dependencies across the project files.
+##### Creates a dependency file regarding projects fils content
 
 ### Install
 ```
