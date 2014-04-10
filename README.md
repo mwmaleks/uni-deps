@@ -80,7 +80,7 @@ var searchDeps = require('uni-deps'). searchDeps;
 
 var options = {
 
-            baseDir: pathJoin('test/sample'),
+            baseDir: 'test/sample',
             fileName: 'myCommonFile',
             ext: '.json'
         };
